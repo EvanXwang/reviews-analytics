@@ -26,3 +26,11 @@ for d in data:   #讀取一百萬筆資料
 		new.append(d) # 則新增進去  new清單
 print ('一共有', len(new),'筆留言長度小於100')
 print (new[0])
+
+
+good = []
+for d in data :
+	if "good" in d :
+		good.append(d)
+print ('一共有', len(good),'筆留言提到good')
+print (good[0])
