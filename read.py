@@ -7,5 +7,11 @@ with open ("reviews.txt", "r") as f:
 		count += 1
 		if count % 1000 == 0: # %是用來求餘數，等於1000筆才印一次 
 			print (len(data))
-print (data [0]) #印出第一筆資料
-print (len(data)) # 算出資料共幾筆
+
+print ("檔案讀取完畢，總共有", len(data), '筆資料') # 算出資料共幾筆
+
+
+sun_len = 0
+for d in data:
+	sun_len += len(d)
+print ('平均長度是', sun_len / len(data))  
